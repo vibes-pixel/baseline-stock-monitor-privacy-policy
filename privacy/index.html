@@ -1,0 +1,76 @@
+# Privacy Policy
+
+**Baseline Stock Monitor**
+
+Baseline Stock Monitor is an app designed to help merchants manually identify and track products that reach zero stock inside their store.
+
+---
+
+## Data Access
+
+The app accesses the following store data through the Shopify Admin API:
+
+* Product and variant information (read-only)
+* Inventory levels per location (read-only)
+* Store identification information required for authentication
+
+The app does not access customer data, orders, or payment information.
+
+---
+
+## Data Usage
+
+Inventory data is accessed only when a merchant manually initiates a scan inside the app.
+
+During a scan, the app reads variant inventory quantities per location to determine whether items are at zero stock. If a zero-stock condition is detected, an event record is created for tracking purposes.
+
+No automatic scans, background monitoring, or scheduled jobs are performed.
+
+---
+
+## Data Storage
+
+The app stores minimal operational data required for functionality, including:
+
+* Store identifier
+* Inventory event records (product ID, variant ID, SKU, vendor, location ID)
+* Event timestamps (first seen, last seen, resolved date if restocked)
+* Vendor exclusion settings (if configured by the merchant)
+
+This data is used solely to support event history, filtering, and CSV export features.
+
+The app does not store customer personal data.
+
+When the app is uninstalled, associated operational data for the store is deleted.
+
+---
+
+## Data Modification
+
+Baseline Stock Monitor is a read-only app.
+
+It does not modify:
+
+* Inventory quantities
+* Products
+* Variants
+* Orders
+* Store settings
+
+---
+
+## Data Sharing
+
+The app does not sell, share, transfer, or disclose store data to third parties.
+
+---
+
+## Security
+
+The app uses Shopify session token authentication and follows Shopify’s app security guidelines. No background data processing or external data sharing occurs.
+
+---
+
+## Contact
+
+For questions regarding this privacy policy, please contact the app developer through the Shopify App Store listing.
