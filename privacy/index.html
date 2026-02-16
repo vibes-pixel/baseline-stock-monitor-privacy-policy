@@ -1,76 +1,123 @@
-# Privacy Policy
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy — Baseline Stock Monitor</title>
+    <meta name="robots" content="noindex" />
+    <style>
+      :root { color-scheme: light dark; }
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        line-height: 1.55;
+      }
+      .wrap {
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 32px 18px 56px;
+      }
+      h1 { font-size: 28px; margin: 0 0 10px; }
+      h2 { font-size: 18px; margin: 26px 0 10px; }
+      p { margin: 10px 0; }
+      ul { margin: 10px 0 10px 20px; }
+      li { margin: 6px 0; }
+      hr { margin: 22px 0; opacity: 0.25; }
+      .muted { opacity: 0.8; font-size: 14px; }
+      .card {
+        border: 1px solid rgba(127,127,127,0.25);
+        border-radius: 12px;
+        padding: 16px 16px;
+        margin-top: 14px;
+      }
+      code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+    </style>
+  </head>
 
-**Baseline Stock Monitor**
+  <body>
+    <main class="wrap">
+      <h1>Privacy Policy</h1>
+      <p class="muted"><strong>Baseline Stock Monitor</strong></p>
 
-Baseline Stock Monitor is an app designed to help merchants manually identify and track products that reach zero stock inside their store.
+      <div class="card">
+        <p>
+          Baseline Stock Monitor is an app designed to help merchants manually identify and track products
+          that reach zero stock inside their store.
+        </p>
+      </div>
 
----
+      <hr />
 
-## Data Access
+      <h2>Data Access</h2>
+      <p>The app accesses the following store data through the Shopify Admin API:</p>
+      <ul>
+        <li>Product and variant information (read-only)</li>
+        <li>Inventory levels per location (read-only)</li>
+        <li>Store identification information required for authentication</li>
+      </ul>
+      <p>The app does not access customer data, orders, or payment information.</p>
 
-The app accesses the following store data through the Shopify Admin API:
+      <hr />
 
-* Product and variant information (read-only)
-* Inventory levels per location (read-only)
-* Store identification information required for authentication
+      <h2>Data Usage</h2>
+      <p>
+        Inventory data is accessed only when a merchant manually initiates a scan inside the app.
+        During a scan, the app reads variant inventory quantities per location to determine whether items are at zero stock.
+        If a zero-stock condition is detected, an event record is created for tracking purposes.
+      </p>
+      <p>No automatic scans, background monitoring, or scheduled jobs are performed.</p>
 
-The app does not access customer data, orders, or payment information.
+      <hr />
 
----
+      <h2>Data Storage</h2>
+      <p>The app stores minimal operational data required for functionality, including:</p>
+      <ul>
+        <li>Store identifier</li>
+        <li>Inventory event records (product ID, variant ID, SKU, vendor, location ID)</li>
+        <li>Event timestamps (first seen, last seen, resolved date if restocked)</li>
+        <li>Vendor exclusion settings (if configured by the merchant)</li>
+      </ul>
+      <p>
+        This data is used solely to support event history, filtering, and CSV export features.
+        The app does not store customer personal data.
+      </p>
+      <p>
+        When the app is uninstalled, associated operational data for the store is deleted.
+      </p>
 
-## Data Usage
+      <hr />
 
-Inventory data is accessed only when a merchant manually initiates a scan inside the app.
+      <h2>Data Modification</h2>
+      <p>Baseline Stock Monitor is a read-only app. It does not modify:</p>
+      <ul>
+        <li>Inventory quantities</li>
+        <li>Products</li>
+        <li>Variants</li>
+        <li>Orders</li>
+        <li>Store settings</li>
+      </ul>
 
-During a scan, the app reads variant inventory quantities per location to determine whether items are at zero stock. If a zero-stock condition is detected, an event record is created for tracking purposes.
+      <hr />
 
-No automatic scans, background monitoring, or scheduled jobs are performed.
+      <h2>Data Sharing</h2>
+      <p>
+        The app does not sell, share, transfer, or disclose store data to third parties.
+      </p>
 
----
+      <hr />
 
-## Data Storage
+      <h2>Security</h2>
+      <p>
+        The app uses Shopify session token authentication and follows Shopify’s app security guidelines.
+        No background data processing or external data sharing occurs.
+      </p>
 
-The app stores minimal operational data required for functionality, including:
+      <hr />
 
-* Store identifier
-* Inventory event records (product ID, variant ID, SKU, vendor, location ID)
-* Event timestamps (first seen, last seen, resolved date if restocked)
-* Vendor exclusion settings (if configured by the merchant)
-
-This data is used solely to support event history, filtering, and CSV export features.
-
-The app does not store customer personal data.
-
-When the app is uninstalled, associated operational data for the store is deleted.
-
----
-
-## Data Modification
-
-Baseline Stock Monitor is a read-only app.
-
-It does not modify:
-
-* Inventory quantities
-* Products
-* Variants
-* Orders
-* Store settings
-
----
-
-## Data Sharing
-
-The app does not sell, share, transfer, or disclose store data to third parties.
-
----
-
-## Security
-
-The app uses Shopify session token authentication and follows Shopify’s app security guidelines. No background data processing or external data sharing occurs.
-
----
-
-## Contact
-
-For questions regarding this privacy policy, please contact the app developer through the Shopify App Store listing.
+      <h2>Contact</h2>
+      <p>
+        For questions regarding this privacy policy, please contact the app developer through the Shopify App Store listing.
+      </p>
+    </main>
+  </body>
+</html>
